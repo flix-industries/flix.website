@@ -4,4 +4,4 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['build']
 - name: 'gcr.io/cloud-builders/npm'
-        ['ls']
+  args: ['ls']
