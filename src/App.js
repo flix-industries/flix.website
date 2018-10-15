@@ -67,7 +67,7 @@ class App extends Component {
                 <h1>flix.
                     <span className="txt-rotate" data-period="2000" data-rotate='[ "industries", "office", "phone", "reflect", "simplicity" ]'></span>
                 </h1>
-                <h2>reimagining the future... meme</h2>
+                <h2>reimagining the future.</h2>
             </div>
         );
     }
