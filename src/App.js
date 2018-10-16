@@ -68,6 +68,7 @@ class App extends Component {
                     <span className="txt-rotate" data-period="2000" data-rotate='[ "industries", "website", "chat", "office", "reflect", "simplicity" ]'></span>
                 </h1>
                 <h2>reimagine the future.</h2>
+
             </div>
         );
     }
