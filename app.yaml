@@ -1,3 +1,2 @@
 env: flex
 runtime: nodejs
-script: npm run build
