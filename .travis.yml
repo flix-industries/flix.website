@@ -3,9 +3,9 @@ node_js:
   - "8.12"
 script: 
   - npm i
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then CI=false; fi
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then npm run build; fi
+  - CI=false 
+  - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && npm run build
 install:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then npm i -g firebase-tools; fi
+  - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && npm i -g firebase-tools
 after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then firebase deploy --token "$FIREBASE_TOKEN"; fi 
+  - itest $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && firebase deploy --token "$FIREBASE_TOKEN"
