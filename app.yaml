@@ -1,8 +1,1 @@
-env: flex
-runtime: nodejs
-handlers:
-  - url: /
-    static_files: build/index.html
-    upload: build/index.html
-  - url: /
-    static_dir: build
+runtime: nodejs8
