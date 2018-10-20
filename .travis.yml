@@ -1,11 +1,10 @@
-warnings_are_errors: false
 language: node_js
 node_js:
   - "8.12"
 script: 
   - echo "Deploying to firebase"
   - npm i
-  - npm run build
+  - CI=false npm run build 
 install:
   - npm i -g firebase-tools
 after_success:
