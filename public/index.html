@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -19,10 +20,11 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>flix.industries</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <noscript>
-      You need to enable JavaScript to run this app.
+        You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
     <!--
@@ -35,5 +37,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyB1WLVNgE12I52bw5PimD7OHlr0w_TBBjw",
+        authDomain: "flix-website.firebaseapp.com",
+        databaseURL: "https://flix-website.firebaseio.com",
+        projectId: "flix-website",
+        storageBucket: "flix-website.appspot.com",
+        messagingSenderId: "93006457964"
+    };
+    firebase.initializeApp(config);
+</script>
+
 </html>
