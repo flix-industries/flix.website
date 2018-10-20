@@ -1,21 +1,17 @@
 {
     "name": "flix.website",
     "version": "0.1.0",
-    "private": true,
+    "private": false,
     "dependencies": {
-        "body-parser": "^1.18.3",
-        "cors": "^2.8.4",
-        "express": "^4.16.4",
         "react": "^16.5.2",
         "react-dom": "^16.5.2",
         "react-scripts": "2.0.5"
     },
     "scripts": {
-        "dev": "react-scripts start",
-        "start": "react-scripts build",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "build:gcp": "react-scripts build && node server.js"
+        "eject": "react-scripts eject"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -25,5 +21,11 @@
         "not dead",
         "not ie <= 11",
         "not op_mini all"
-    ]
+    ],
+    "devDependencies": {
+        "eslint": "^5.7.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-jsx-a11y": "^6.1.2",
+        "eslint-plugin-react": "^7.11.1"
+    }
 }
