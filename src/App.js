@@ -12,11 +12,7 @@ class App extends Component {
 
         this.app = firebase.initializeApp(config);
     }
-
-    componentWillMount() {
-
-    }
-
+    
     render() {
         return (
             <div className="App">
