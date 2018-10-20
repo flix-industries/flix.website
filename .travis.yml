@@ -4,8 +4,8 @@ node_js:
 script: 
   - npm i
   - CI=false
-  - if [ "$TRAVIS_BRANCH" == "master" AND $TRAVIS_PULL_REQUEST == "false" ]; then npm run build; fi
+  - if [ "$TRAVIS_BRANCH" == "master" AND "$TRAVIS_PULL_REQUEST" == "false" ]; then npm run build; fi
 install:
-  - if [ "$TRAVIS_BRANCH" == "master" AND $TRAVIS_PULL_REQUEST == "false" ]; then npm i -g firebase-tools; fi
+  - if [ "$TRAVIS_BRANCH" == "master" AND "$TRAVIS_PULL_REQUEST" == "false" ]; then npm i -g firebase-tools; fi
 after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" AND $TRAVIS_PULL_REQUEST == "false" ]; then firebase deploy --token "$FIREBASE_TOKEN"; fi 
+  - if [ "$TRAVIS_BRANCH" == "master" AND "$TRAVIS_PULL_REQUEST" == "false" ]; then firebase deploy --token "$FIREBASE_TOKEN"; fi 
