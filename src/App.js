@@ -12,14 +12,14 @@ class App extends Component {
 
         this.app = firebase.initializeApp(config);
     }
-    
+
     render() {
         return (
             <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <p>
-                        Edit <code>src/App.js</code> and save to reload.
+                        firebase test
                     </p>
                     <a
                         className="App-link"
