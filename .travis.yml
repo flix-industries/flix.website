@@ -2,10 +2,9 @@ language: node_js
 node_js:
   - "8.12"
 script: 
-  - echo "Deploying to firebase"
   - npm i
-  - CI=false npm run build 
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then echo "Deploying to firebase";  - CI=false npm run build  fi
 install:
-  - npm i -g firebase-tools
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then npm i -g firebase-tools; fi
 after_success:
-  - firebase deploy --token "$FIREBASE_TOKEN"
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then firebase deploy --token "$FIREBASE_TOKEN"; fi 
