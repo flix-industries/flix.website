@@ -3,6 +3,7 @@ node_js:
   - "8.12"
 script: 
   - npm i
+  - CI=true npm run test
   - CI=false
   - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then npm run build; fi
 install:
