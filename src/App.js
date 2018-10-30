@@ -21,7 +21,7 @@ class App extends Component {
                 <h1>flix.
                     <ReactRotatingText items={this.titleContents} typingInterval={100} pause={2500} />
                 </h1>
-                <h2>reimage the future.</h2>
+                <h2>reimagine the future.</h2>
             </div>
         );
     }
