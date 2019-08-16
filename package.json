@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": false,
     "dependencies": {
-        "firebase": "^5.5.5",
+        "firebase": "^6.4.0",
         "react": "^16.5.2",
         "react-dom": "^16.5.2",
         "react-rotating-text": "^1.2.1",
